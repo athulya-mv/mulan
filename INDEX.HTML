@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netfilx | landing page UI desigh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./logo.png" alt=""></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder =" search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="./bg.jpg" alt="" class="bg">
+        <div class="content">
+            <img src="./name.png" alt="" class="movietittle">
+            <h4>
+                <span>2020</span>
+                <span>12+</span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi modi eius quaerat ad, eveniet consequuntur provident rerum eum nobis fuga neque, reiciendis temporibus quos. Fugiat quasi quibusdam animi quisquam explicabo?</p>
+            <div class="buttons">
+                <a href="#">play</a>
+                <a href="#"> My List</a>
+            </div>    
+        </div>
+        <div>
+            <a href="" class="play"><img src="./play.png" alt=""> watch tailer</a>
+            <video src="video.mp4"></video>
+            <img src="./close.png" alt="" class="close">
+
+        </div>
+    </div>
+    <script> 
+     function togglevideo() {
+         const trailer = document.querySelector('.trailer')
+         const video = document.querySelector( 'video')
+         trailer.classList.toggle(active)
+         video.currentTime =0;
+         video.pause();
+     }
+</body>
+</html>
